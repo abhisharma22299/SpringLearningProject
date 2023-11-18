@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en "   xmlns:th="www.thymeLeaf.org" th:fragment="Layout(content)">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+<link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+
+<body>
+	<h1>This is common hadder</h1>
+	
+	<div th:replace="${content}">
+		
+		
+	</div>
+
+<h2>This is common footer</h2>
+</body>
+</html>

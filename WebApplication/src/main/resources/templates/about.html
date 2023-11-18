@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Owner Name is : <h1 th:text="${#strings.toUpperCase(name) }"></h1></h2>
+	<h2>Owner Name is : <h1 th:text="${name  }"></h1></h2>
+<h2>Date : <h1 th:text="${currentDate}"></h1></h2>
+<div th:with="a=10,b=20 ,n=${name}">
+	<h1> a ss <span th:text="${a}"> </span></h1>
+	<h1 th:text="'value of b is '+ ${b}"></h1>
+	<h1 th:text="'Sum of '+ ${a}+' and '+${b} + ' is : ' +${a+b}  "> </h1>
+</div>
+</body>
+</html>

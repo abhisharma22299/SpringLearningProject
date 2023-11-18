@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" xmlns:th="www.thymeLeaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Login Form </title>
+</head>
+<link rel="stylesheet" th:href="@{/newstyle.css}"/>
+<body>
+	<div class="container">
+    <h2>Login</h2>
+    <form th:action="@{/process}" method="post" th:object="${LoginData}">
+        <label for="username">Username:</label>
+   
+   <input 
+     type="text" 
+     name ="userName"
+      id="username"
+      
+
+   >
+   
+    <label for="username">GMail:</label>
+        <input type="text" id="username" name="email">
+        
+     
+        <div class="checkbox-container">
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+</body>
+</html>
