@@ -1,0 +1,3 @@
+// Jdbc is stands for Java Database Connectivity . it is a standard API provided By Oracele for java applications to interact with different set
+of databases.
+// API (is the set of predefine class and interfaces)
